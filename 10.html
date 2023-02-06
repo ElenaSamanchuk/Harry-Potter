@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            font-family: 'Henny Penny', cursive;
+            font-weight: 900;
+            font-size: 20px;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background-position: center;
+        }
+
+        
+       
+
+        a {
+            border: 5px dashed red;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: red;
+            font-size: 30px;
+            font-weight: 900;
+            animation: a 3s ease-in-out infinite;
+            margin-bottom: 30px;
+            background-color: aliceblue;
+            margin-left: 10px;
+        }
+
+        @keyframes a {
+            0% {
+                font-size: 35px;    
+                opacity: 0.5;        
+            }
+            50% {
+                font-size: 30px;     
+                opacity: 1;  
+            }
+            100% {
+                font-size: 35px;   
+                opacity: 0.5;    
+            }
+        }
+        
+        .btn {
+            border: 5px dashed red;
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: red;
+            font-size: 30px;
+            background-color: aliceblue;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .opacity {
+            opacity: 0;
+        }
+
+        div {
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .btn:active~.opacity {
+            opacity: 1;
+        }
+        input[type='text'] {
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.258);
+            outline: none;
+            border: 2px solid gray;
+        }
+
+        input[type='button'] {
+            border: 5px dashed red;
+            border-radius: 10px;
+            padding: 8px 20px;
+            color: red;
+            font-size: 30px;
+            background-color: aliceblue;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="code" id="code">
+        <input type="button" value="code" onclick="check()">
+    </div>
+
+    <br>
+    <img src="" alt="" id="img">
+    <script>
+        function check() {
+            let code = document.querySelector('#code').value;
+            let img = document.querySelector('#img');
+        if (code == 'celebratio incipit') {
+            img.src = 'финал.png';
+        }        
+        }
+        
+    </script>
+</body>
+</html>

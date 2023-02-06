@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гарри Поттер</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-image: url('карта.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            font-family: 'Henny Penny', cursive;
+            font-weight: 900;
+            font-size: 20px;
+            text-transform: uppercase;
+            
+        }
+
+        div {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 5px dashed red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50px;
+            left: 280px;
+            animation: div 3s ease-in-out infinite;
+        }
+
+        @keyframes div {
+            0% {
+                transform: scale(1.1) rotate(5deg);    
+                opacity: 0.5;        
+            }
+            50% {
+                transform: scale(0.9) rotate(-5deg);   
+                opacity: 1;  
+            }
+            100% {
+                transform: scale(1.1) rotate(5deg); 
+                opacity: 0.5;    
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+        img {
+            width: 500px;
+            position: absolute;
+            top: 25%;
+            left: 35%;
+        }
+    </style>
+</head>
+<body>
+    <div class="location"><a href="2.html">VISIT</a></div>
+    <img src="письмо.png" alt="письмо">
+</body>
+</html>

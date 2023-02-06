@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-image: url('/уизли.jpg');
+            background-repeat: no-repeat;
+            background-size: 50%;
+            overflow: hidden;
+            font-family: 'Henny Penny', cursive;
+            font-weight: 900;
+            font-size: 20px;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background-position: top;
+        }
+
+        
+       
+
+        a {
+            border: 5px dashed red;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: red;
+            font-size: 30px;
+            font-weight: 900;
+            animation: a 3s ease-in-out infinite;
+            margin-bottom: 30px;
+            background-color: aliceblue;
+            margin-left: 10px;
+        }
+
+        @keyframes a {
+            0% {
+                font-size: 35px;    
+                opacity: 0.5;        
+            }
+            50% {
+                font-size: 30px;     
+                opacity: 1;  
+            }
+            100% {
+                font-size: 35px;   
+                opacity: 0.5;    
+            }
+        }
+        
+        .btn {
+            border: 5px dashed red;
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: red;
+            font-size: 30px;
+            background-color: aliceblue;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .opacity {
+            opacity: 0;
+        }
+
+        div {
+            margin: 30px 0;
+        }
+
+        .btn:active~.opacity {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="7.html">PREV</a>
+        <a href="9.html">NEXT</a>
+    </div>
+</body>
+</html>
